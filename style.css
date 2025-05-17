@@ -71,9 +71,14 @@ h3 {
   padding: 20px;
   max-width: 300px;
   color: #ccc;
-  transform: translate(180px, 0px);
+  transform: translate(170px, 0px);
   font-size: 20px;
 }
+
+@media only screen {
+  .container {
+    transform: translate(170px, 0px);
+  }
 
 ul {
   list-style-type: square;
