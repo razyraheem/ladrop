@@ -62,8 +62,7 @@ header {
 
 h3 {
   font-size: 24px;
-  margin-left: 10px;
-  margin-bottom: 15px;
+  transform: translate(180px, -10px);
 }
 
 .container {
@@ -73,11 +72,12 @@ h3 {
   max-width: 300px;
   color: #ccc;
   transform: translate(170px, 0px);
+  font-size: 20px;
 }
 
 @media only screen {
   .container {
-    transform: translate(0px, 0px);
+    transform: translate(170px, 0px);
   }
 
 ul {
