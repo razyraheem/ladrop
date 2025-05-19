@@ -23,6 +23,7 @@ header {
   margin-bottom: 30px;
   max-width: 100%;
   flex-wrap: wrap;
+  flex-direction: column;
 }
 
 .image-text {
@@ -50,51 +51,132 @@ header {
 }
 
 .center a {
-  color: gray;
+  color: black;
   text-decoration: none;
   font-size: 18px;
   font-weight: bold;
+  text-decoration: none;
 }
 
 .center a:hover {
-  color: black;
+  color: #7E3615;
+  text-decoration: underline;
+  text-underline-offset: 7px;
+  text-decoration-color: #3C1006;
 }
 
 h3 {
   font-size: 24px;
-  transform: translate(180px, -10px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
 }
 
-.container {
-  background-color: rgba(0, 0, 0, 0.6);
-  border-radius: 20px;
+.product-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  width: 100%;
   padding: 20px;
-  max-width: 300px;
-  color: #ccc;
-  transform: translate(170px, 0px);
-  font-size: 20px;
 }
 
-@media only screen {
-  .container {
-    transform: translate(170px, 0px);
-  }
-
-ul {
-  list-style-type: square;
-  margin-top: 10px;
-  padding-left: 20px;
+.product-card1 {
+  background-image: url('tshirt.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 15px;
+  border-radius: 15px;
+  width: 250px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
 }
 
-ul ul {
-  list-style-type: disc;
+.product-card2 {
+  background-image: url('Shirt.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 15px;
+  border-radius: 15px;
+  width: 250px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
 }
 
-ul a {
-  color: lightblue;
+.product-card3 {
+  background-image: url('pants.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 15px;
+  border-radius: 15px;
+  width: 250px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.product-card1:hover {
+  transform: translateY(-5px);
+}
+
+.product-card1 h4 {
+  margin-bottom: 10px;
+  color: #3D1E0F;
+}
+
+.product-card1 a {
+  display: block;
+  color: #DFD8CD;
   text-decoration: none;
+  margin-bottom: 5px;
+  font-size: 16px;
 }
 
-ul a:hover {
-  color: yellow;
+.product-card1 a:hover {
+  color: #ffcc00;
+}
+
+.product-card2:hover {
+  transform: translateY(-5px);
+}
+
+.product-card2 h4 {
+  margin-bottom: 10px;
+  color: #3D1E0F;
+}
+
+.product-card2 a {
+  display: block;
+  color: #DFD8CD;
+  text-decoration: none;
+  margin-bottom: 5px;
+  font-size: 16px;
+}
+
+.product-card2 a:hover {
+  color: #ffcc00;
+}
+
+.product-card3:hover {
+  transform: translateY(-5px);
+}
+
+.product-card3 h4 {
+  margin-bottom: 10px;
+  color: #3D1E0F;
+}
+
+.product-card3 a {
+  display: block;
+  color: #DFD8CD;
+  text-decoration: none;
+  margin-bottom: 5px;
+  font-size: 16px;
+}
+
+.product-card3 a:hover {
+  color: #ffcc00;
 }
